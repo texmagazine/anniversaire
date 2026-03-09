@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Jeux de lettres</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- MENU D'ACCUEIL -->
+  <div id="menu">
+    <h1>Choisis ton jeu</h1>
+    <button id="btn-phrases">Jeu de phrase à découvrir</button>
+    <button id="btn-mots">Jeu de mot à trouver</button>
+  </div>
+
+  <!-- ZONE DE JEU -->
+  <div id="container">
+
+    <h1 id="titre-jeu" class="titre-jeu"></h1>
+    <p id="instructions" class="sous-titre"></p>
+
+    <!-- MESSAGE SOUS LE TITRE -->
+    <div id="message"></div>
+
+    <div id="phrase"></div>
+    <div id="indice"></div>
+
+    <div id="lettres"></div>
+
+    <div id="controls">
+      <button id="retour-menu">Retour à l'accueil</button>
+      <button id="nouvelle-partie">Nouvelle partie</button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

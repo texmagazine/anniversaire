@@ -1,0 +1,196 @@
+body {
+    background-image: url("image/fondcolore.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* MENU */
+#menu {
+  margin-top: 80px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  width: 60%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+#menu button {
+  padding: 20px 30px;
+  margin: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffffffcc;
+  transition: 0.2s;
+}
+
+#menu button:hover {
+  background-color: #fff;
+}
+
+/* CONTAINER */
+#container {
+  display: none;
+  margin-top: 40px;
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  background: rgba(174, 216, 219, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  position: relative;
+  min-height: 350px; 
+}
+
+/* PHRASE */
+#phrase {
+  margin: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.case {
+  width: 60px;
+  height: 70px;
+  border: 3px solid #000;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+  background: white;
+  box-sizing: border-box;
+}
+
+.espace-large {
+  width: 30px;
+}
+
+.mot {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 12px;
+  margin-right: 20px;
+  align-items: center;
+}
+
+/* LETTRES DU CLAVIER */
+#lettres {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.lettre {
+  width: 60px;
+  height: 60px;
+  font-size: 28px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: 2px solid #333;
+  background: #eee;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.lettre:hover {
+  background: #ddd;
+}
+
+.lettre:disabled {
+  cursor: not-allowed;
+  
+}
+
+.lettre.bonne {
+  background: #7CFC00; /* vert clair */
+  color: black;
+  opacity: 1 !important; /* reste bien visible */
+}
+
+/* MESSAGE */
+#message {
+  color: #e60000; /* rouge vif */
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+
+#controls {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+#controls button {
+  padding: 20px 35px;
+  font-size: 26px;
+  font-weight: bold;
+  border-radius: 12px;
+  border: 3px solid #333;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#controls button:hover {
+  background: #f0f0f0;
+}
+
+#indice {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  background: rgba(219, 94, 94, 0.85);
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: 2px solid #333;
+}
+
+#titre-jeu {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#sous-titre {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+.case.mauvaise {
+  background: #e74c3c;
+  color: white;
+}
+
+.lettre.mauvaise {
+  background: #e74c3c;
+  color: white;
+  opacity: 1 !important; /* empêche la transparence */
+}
